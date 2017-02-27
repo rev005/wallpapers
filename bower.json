@@ -1,0 +1,22 @@
+{
+  "name": "wallpapers",
+  "authors": [
+    "rev005"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.0"
+  },
+  "private": true
+}

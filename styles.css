@@ -1,0 +1,105 @@
+
+
+.row {
+    margin: 0px;
+    /*background-color: black;*/
+}
+
+.thePage{
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+.thePage.showMenu{
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.menuBar {
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.menuBar.showMenu{
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+.header {
+    width: 100%;
+    padding: 10px;
+}
+.menuBtn {
+    color: black;
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 4px 6px;
+    /*margin: 10px 0px 0px 10px;*/
+}
+
+.masonry {
+    /*background-color: black;*/
+    margin: 10px;
+    column-count: 5;
+    column-gap: 1em;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+.items {
+    margin: 1em 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .masonry {
+        column-count: 5;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    .masonry {
+        column-count: 1;
+    }
+}
