@@ -18,13 +18,13 @@
 }
 
 .menuBar {
-    background-color: grey;
+    background-color: #555;
     position: fixed;
     top: 0;
     left: -200px;
     width: 200px;
     height: 100%;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     z-index: 5;
 }
 
@@ -51,7 +51,7 @@
 .masonry {
     /*background-color: black;*/
     margin: 10px;
-    column-count: 5;
+    column-count: 8;
     column-gap: 1em;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -60,13 +60,14 @@
 }
 
 .items {
-    margin: 1em 0;
+    margin: 0 0 1em 0;
     width: 100%;
     border-radius: 5px;
 }
 
-img {
+.items img {
     border-radius: 5px;
+    width: 100%;
 }
 
 

@@ -6,13 +6,20 @@
     <link rel="stylesheet" type="text/css" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
     <title>Title of the document</title>
 </head>
 
 <body>
     <div id="container-fluid">
-        <div class="menuBar"></div>
+        <div class="menuBar">
+          <ul style="color:white">
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+            <li>Menu 5</li>
+          </ul>
+        </div>
         <div class="row thePage">
             <div class="header">
                 <icon class="menuBtn glyphicon glyphicon-menu-hamburger"></icon>
@@ -21,7 +28,12 @@
         </div>
     </div>
 </body>
+
+<script type="text/javascript" src="js/main.js"></script>
 <script>
+    $(document).ready(function() {
+        app.init();
+    });
 </script>
 
 </html>
