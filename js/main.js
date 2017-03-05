@@ -3,12 +3,21 @@ var app = {
     imageArr: [],
     init: function() {
         console.log('app initiate');
-        app.addEvents();
+
         app.gettyImages();
         //app.getMyImages();
         app.displayImages();
-        // app.displayMyImages();
+        app.addEvents();
     },
+
+    loader: function() {
+        if ($('.loader').hasClass('hide')) {
+            $('.loader').removeClass('hide');
+        } else {
+            $('.loader').addClass('hide');
+        }
+    },
+
     addEvents: function() {
         $('.menuBtn').on('click', function() {
             var active = $('.menuBar').hasClass('showMenu');
@@ -18,11 +27,22 @@ var app = {
                 $('.menuBar, .thePage').addClass('showMenu');
             }
         });
+
+        $('.header .zzz').on('click', function(e) {
+            console.log('target');
+            $('.masonry').css('column-count', e.target.value);
+        });
+
+        $('.items img').on('click', function() {
+            var image = $(this).attr('src');
+            $('.imgModal').attr('src', image);
+            // $('.modal .modal-body img').css('width', '100%');
+            // $('.modal .modal-body img').css('height', $(window).height());
+            $('#myModal').modal('show');
+        });
     },
 
     gettyImages: function() {
-        var folder = "images/";
-
         $.ajax({
             url: 'https://api.gettyimages.com/v3/search/images?fields=id,title,thumb,referral_destinations&sort_order=best&phrase=celebrities',
             type: "GET",

@@ -40,6 +40,10 @@
     padding: 10px;
 }
 
+.header .zzz {
+    float: right;
+}
+
 .menuBtn {
     color: black;
     border-radius: 3px;

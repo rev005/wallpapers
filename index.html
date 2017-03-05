@@ -5,31 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/loader.css">
     <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <title>Title of the document</title>
 </head>
 
 <body>
     <div id="container-fluid">
+
         <div class="menuBar">
-          <ul style="color:white">
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
-            <li>Menu 4</li>
-            <li>Menu 5</li>
-          </ul>
+            <ul style="color:white">
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+            </ul>
         </div>
+
         <div class="row thePage">
             <div class="header">
                 <icon class="menuBtn glyphicon glyphicon-menu-hamburger"></icon>
+                <div class="btn-group zzz" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default" value="3">3</button>
+                    <button type="button" class="btn btn-default" value="5">5</button>
+                    <button type="button" class="btn btn-default" value="6">6</button>
+                    <button type="button" class="btn btn-default" value="8">8</button>
+                    <button type="button" class="btn btn-default" value="10">10</button>
+                    <button type="button" class="btn btn-default" value="12">12</button>
+                </div>
             </div>
+
             <div class="masonry"></div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <img src="" alt="" class="imgModal img-responsive">
+                </div>
+            </div>
         </div>
     </div>
 </body>
 
-<script type="text/javascript" src="js/main.js"></script>
 <script>
     $(document).ready(function() {
         app.init();
