@@ -5,7 +5,7 @@ var app = {
         console.log('app initiate');
         app.addEvents();
         app.gettyImages();
-        app.getMyImages();
+        //app.getMyImages();
         app.displayImages();
         // app.displayMyImages();
     },
